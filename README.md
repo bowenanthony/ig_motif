@@ -36,3 +36,6 @@ This script contains the main IgMotif algorithm where a three-residue seed motif
 
 ###Contact Anthony Bowen with questions or difficulties running these scripts
 * anthony.bowen at med.einstein.yu.edu
+
+###Current release:
+[![DOI](https://zenodo.org/badge/66680496.svg)](https://zenodo.org/badge/latestdoi/66680496)
