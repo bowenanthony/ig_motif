@@ -10,16 +10,18 @@ Bowen A, Wear MP, Cordero RJB, Oscarson S, Casadevall A. A monoclonal antibody t
 This script can be used to download all PDB files from the Protein Data Bank or selected sets from lists in the PDBid_lists.xlsx file. This script also analyzes all PDB files for duplicates, and identifies any files that contain antibody V region sequences. This analysis requires the comparison of PDB file protein chains to sequences in the "IMGT Gene-DB AA V gaps" directory.
 
 2. Cab_seq_tree1-0.R
-This script is used to generate circular dendrogram plots of heavy or light chain sequences analyzed by scripts 1 and 3. Examples of the plots are shown in the "figs" directory and were used to create Figure 10 in the JBC manuscript. This script was also used to analyze the amino acid conservation of V region sequences and to generate Figure 9 in the JBC manuscript.
+This script is used to generate circular dendrogram plots of heavy or light chain sequences analyzed by scripts 1 and 3. Examples of the plots are shown in the "figs" directory and were used to create Figure 10 in the JBC manuscript. This script was also used to analyze the amino acid conservation of V region sequences and to generate Figure 9 in the JBC manuscript. In order to generate the sequence conservation figures, fasta files of the sequences are created in the output folder. These are then aligned using the online Clustal Omega tool (http://www.ebi.ac.uk/Tools/msa/clustalo/) with default parameters. Aligned sequences are saved as fasta files in the alignments directory. These aligned files are used by the script to generate the conservation figure.
 
 3. PDB templates1-3.R
 This script contains the main IgMotif algorithm where a three-residue seed motif can be specified and compared to possible motifs from other protein structures in the PDB. Script 1 must be run first to download and analyze the appropriate PDB files.
 
-###Directories and sub-directories that need to be pointed to in these scripts are listed below:
+###Directories and sub-directories that need to be pointed to in the beginning of these scripts are listed below:
 
-* IMGT Gene-DB AA V gaps
-* alignments
-* figs
+* IgMotif
+ * IMGT Gene-DB AA V gaps
+ * alignments
+ * figs
+ * output
 * R Working Directory
   * IgMotif_temp
     * PDB_DB
