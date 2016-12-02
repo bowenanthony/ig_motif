@@ -22,6 +22,8 @@ This script contains the main IgMotif algorithm where a three-residue seed motif
  * alignments
  * figs
  * output
+ * mean temps
+  * seeds
 * R Working Directory
   * IgMotif_temp
     * PDB_DB
